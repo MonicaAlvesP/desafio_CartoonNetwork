@@ -1,13 +1,25 @@
-import React from "react";
-import * as S from './MainStyle.jsx'
+import React, { useState } from 'react'
+
 import Scoobydoo from './img/scooby.svg'
 import Ben10 from './img/ben10.svg'
 import LooneyTunes from './img/looneytunes.svg'
+
+// A segunda section ultilizaremos o map, map é um método que mapeia (percorre) array []
 import Gumball from './img/gumball.svg'
 import Powerpuff from './img/powerpuff.svg'
 import TomandJerry from './img/TomandJerry.svg'
 
-export default function Main() {
+import * as S from './MainStyle.jsx'
+
+import Programacao from '../Programacao/Programacao.jsx' // Importando Programação dentro da Main
+
+function Main() {
+    //Sintaxe do useState
+    //const [estado, setEstado] = useState()
+
+    const [galeria, setGaleria] = useState([
+    Gumball, Powerpuff, TomandJerry
+])
     return(
         <main>
             <S.StyleSessao1>
@@ -17,10 +29,14 @@ export default function Main() {
             </S.StyleSessao1>
 
             <S.StyleSessao2>
-                <img src={Gumball} alt="Imagem do desenho Incrivel Mundo de Gumball" />
-                <img src={Powerpuff} alt="Imagem do desenho As Meninas Super Poderosas" />
-                <img src={TomandJerry} alt="Imagem do desenho do Tom and Jerry" />
+                {galeria.map((item) => (
+                    <img src={item} alt='Galeria de Imagens Cartoon' />
+                ))}
             </S.StyleSessao2>
+
+            <Programacao />
         </main>
     )
 }
+
+export default Main
