@@ -27,7 +27,7 @@ export const Img = styled.img`
     height: 5rem;
 `
 
-export const bgFooter = styled.footer`
+export const Rodape = styled.section`
     background-color: #EDD820;
     color: white;
     display: flex;

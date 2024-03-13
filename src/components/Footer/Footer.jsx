@@ -7,7 +7,7 @@ import * as S from './StyleFooter'
 
 export default function Footer() {
     return(
-    <>
+    <footer>
         <S.StyleSection>
             <img src={Warner_logo} />
             
@@ -29,9 +29,9 @@ export default function Footer() {
 
         </S.StyleSection>
 
-        <S.bgFooter>
+        <S.Rodape>
             <h4>@2024 Cartoon Network</h4>
-        </S.bgFooter>
-    </>
+        </S.Rodape>
+    </footer>
     )
 }
