@@ -27,9 +27,9 @@ const [desenhos, setDesenhos] = useState([
         <S.style_Section>
             {desenhos.map((item) => (
                 <S.style_Div>
-                    <S.styleTitulo>{item.nome}</S.styleTitulo>
                     <S.styleTitulo>{item.hora}</S.styleTitulo>
-                    <img src={item.imagem}/>
+                    <S.styleTitulo>{item.nome}</S.styleTitulo>
+                    <img src={item.imagem} alt={item.nome}/>
                 </S.style_Div>
             ))}
         </S.style_Section>

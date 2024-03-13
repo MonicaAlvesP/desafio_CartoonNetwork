@@ -3,23 +3,23 @@ import styled from "styled-components";
 export const style_Section = styled.section`
     background-color: #363636;
     color: #fff;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1rem));
-    grid-gap: 10px;
-    grid-column-gap: 20px;
-    padding: 1rem;
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+
 `
 
 export const style_Div = styled.div`
     display: flex;
-    flex-direction: column;
+    width: 40vw;
+    height: 14vh;
+    justify-content: space-around;
     align-items: center;
-    text-align: center;
+    margin: 0.2rem;
 `
 
 export const styleTitulo = styled.h2`
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
-    margin-top: 10px;
 `
