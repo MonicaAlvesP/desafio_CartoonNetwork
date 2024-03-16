@@ -1,25 +1,46 @@
-import styled from "styled-components";
+import style from "styled-components";
 
-export const style_Section = styled.section`
-    background-color: #363636;
-    color: #fff;
+export const style_Section = style.section`
+    background-color: #464646;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+
+`
+
+export const style_Div = style.div`
+    width: 40%;
+    height: 12vh;
     display: flex;
     justify-content: space-evenly;
-    flex-wrap: wrap;
-
-`
-
-export const style_Div = styled.div`
-    display: flex;
-    width: 40vw;
-    height: 14vh;
-    justify-content: space-around;
     align-items: center;
-    margin: 0.2rem;
+    font-size: 1.2rem;
+    color: white;
+    margin: 0.5rem;
 `
 
-export const styleTitulo = styled.h2`
+export const SectionManha = style.section`
+    background-color: #EDD820;
+    display: flex; 
+    justify-content:center;
+    flex-direction: column;  
+    align-items: center;
+`
+
+export const styleTitulo = style.h2`
     font-family: "Roboto", sans-serif;
     font-weight: 100;
     font-style: normal;
+`
+
+export const CardManha = style.div`
+    width: 50%;
+    height: 10vh;
+    display: flex; 
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 1.2rem;
+    color: black;
+    font-weight: 900;
+    margin: 0.5rem;
 `
